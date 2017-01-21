@@ -75,7 +75,7 @@ class NN:
         :param no:输出单元数量
         """
         self.ni = ni + 1  # +1 是为了偏置节点
-        self.nh = nh
+        self.nh = nh + 1  # 隐藏层加偏置节点
         self.no = no
 
         # 激活值（输出值）
