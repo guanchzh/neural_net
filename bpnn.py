@@ -105,7 +105,7 @@ class NN:
         for i in range(self.ni - 1):
             self.ai[i] = inputs[i]
 
-        for j in range(self.nh):
+        for j in range(self.nh - 1):
             sum = 0.0
             for i in range(self.ni):
                 sum += ( self.ai[i] * self.wi[i][j] )
